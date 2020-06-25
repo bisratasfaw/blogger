@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+<head>
+<link rel="stylesheet" href="myblog.css"> 
+<script src="filesaver.js"></script> 
+<script >
+    function postBTN(){
+    var user= document.getElementsById("UN").value;
+    var blob= new Blob([user],{type: 'text/plain;charset=utf-8'});
+    saveAs(blob,("user.txt"));
+}
+</script>
+</head>
+<body>
+        <header>
+                <p>My Blog</p>
+            </header>
+    <h1 class="UN" id="UN">username</h1>
+    <div class="writer">
+            <h1 class="heads">Writer</h1>
+        <label for="Tarea">Type your info</label>
+        <textarea class="type" name="tarea" id="Tarea" cols="65" rows="35" 
+        placeholder="Blog here"></textarea>
+        <button class="post_btn" onclick="postBTN();">Post</button>  
+    </div>
+    
+    <div class="posted">
+            <h1 class="heads">posted</h1>
+        <p class ='blogs'><b>Technology</b> is the set of knowledge, skills, experience 
+            and techniques through which humans change, transform and
+             use our environment in order to create tools, machines, 
+             products and services that meet our needs and desires. 
+             Etymologically the word comes from the Greek tekne
+             (technical, art, skill) and logos (knowledge)</p>
+           
+    </div>
+    
+
+</body>
+</html>

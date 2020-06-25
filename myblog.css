@@ -1,0 +1,42 @@
+header{
+    background-image: url("header.jpg");
+    font-family: Courier New, Courier, monospace;
+    font-size: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0%;
+    text-align: center;
+
+}
+body{
+    background-image:url("login3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+ .writer{
+    background-color: rgba(145, 77, 0, 0.055);
+    border:1%; 
+    border-style: outset;
+    border-color:rgba(245, 164, 2, 0.158) ;
+    padding :0%;
+    margin-top: 0%;
+    margin-left:0%;
+    height:45%;
+    width:45%;
+    font-size: 30px;
+    float: left;
+}
+.posted{
+    position: relative;
+    background-color: rgba(145, 77, 0, 0.055);
+    border:1%; 
+    border-style: outset;
+    border-color:rgba(245, 164, 2, 0.158) ;
+    padding :1%;
+    margin-top: 0%;
+    margin-left:50%;
+    height:45%;
+    width:45%;
+    font-size: 30px;
+}

@@ -1,0 +1,72 @@
+
+var logs=[
+    {
+        username:'abebe',
+        password:'123456'
+    },
+    {
+        username:'chala',
+        password:'123456'
+    },
+],cart1=[];
+
+function signin(){
+    var user=document.getElementById("username").value;
+    var pass=document.getElementById("pwd").value;
+    for (i=0;i<logs.length;i++){
+        if (user==logs[i].username && pass==logs[i].password){
+            location.href="home.html";
+            document.getElementById("username").style.backgroundcolor="green";
+            document.getElementById("pwd").style.backgroundcolor="green";
+            
+            return
+
+        }
+    }
+   
+    document.getElementById("username").value="INCORRECT USERNAME OR PASSWORD";
+    document.getElementById("username").style.color="red";
+}
+
+var firstname=document.getElementById("fn").value;
+var lastname=document.getElementById("ln").value;
+var middlename=document.getElementById("mn").value;
+var email=document.getElementById("email").value;
+var pass1=document.getElementById("pwd").value;
+var pass2=document.getElementById("pwds").value;
+var pass
+
+function register(){
+    
+
+    if (pass1==pass2){
+        pass=pass1;
+    }
+    else
+    {
+        document.getElementById("pwd").value="";
+        document.getElementById("pwds").value="PASSWORD DOSENT MATCH!";
+        document.getElementById("PWDS").style.color="red";
+    }
+    var user={},cart2=[];
+    
+    
+        //var size1=user.length;
+       // size+=1;
+        user.Fname=firstname;
+        user.Lname=lastname;
+        user.Mname=middlename;
+        user.Email=email;
+        user.password=pass;
+        cart2.push(user);
+
+       // var size2=logs.length;
+
+        logs.username=firstname;
+        logs.password=pass;
+        cart1.push(logs);
+        
+
+        location.href="home.html";
+
+}
